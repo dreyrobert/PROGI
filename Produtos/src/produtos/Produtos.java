@@ -8,6 +8,7 @@ package produtos;
  *
  * @author aluno
  */
+
 public class Produtos {
 
     /**
@@ -19,8 +20,8 @@ public class Produtos {
         
         ItemPedido rob = new ItemPedido(robert, 10);
         
-        Pedido ped = new Pedido(rob);
-        ped.adicionarItem(rob);
+        Pedido ped = new Pedido(2);
+        ped.adicionarItem(rob, 1);
     }
     
 }

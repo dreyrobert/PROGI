@@ -28,4 +28,8 @@ public class ItemPedido {
     public void setProd(Produto p) {
         this.prod = p;
     }
+
+    public Produto getProd() {
+        return prod;
+    }
 }

@@ -9,22 +9,19 @@ package produtos;
  * @author aluno
  */
 public class Pedido {
-    private ItemPedido itens[];
+    private ItemPedido[] itens;
     private double valorTotal;
     
-    public Pedido(ItemPedido first) {
+    public Pedido(int n) {
         this.valorTotal = 0;
+        this.itens = new ItemPedido[n];
     }
     public double obterTotal() {
         return this.valorTotal;
     }
         
-    public void adicionarItem(ItemPedido it) {
-        this.valorTotal += it.getQuantidade();
+    public void adicionarItem(ItemPedido it, int i) {
+        this.valorTotal += it.getQuantidade()*it.getProd().getValor();
+        this.itens[i] = it;
     }
-    
-    public ItemPedido getItens() {
-        return this.itens;
-    }
-    
 }

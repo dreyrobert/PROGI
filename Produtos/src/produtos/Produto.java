@@ -22,4 +22,8 @@ public class Produto {
    public int getCodigo() {
         return this.codigo;
     }
+
+    public double getValor() {
+        return valor;
+    }
 }
